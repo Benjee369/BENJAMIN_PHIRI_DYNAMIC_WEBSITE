@@ -6,7 +6,6 @@ if (!isset($_SESSION["isloggedin"])) {
     header("Location: Login.php");
 }
 
-
 require_once 'Database_connection.php';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $title = $_POST["title"];    
